@@ -1,0 +1,387 @@
+$dark-color: #19283f;
+$green-color: #33d1cc;
+$red-color: #ff3150;
+$yellow-color: #ffc400;
+$section-color: #eff7fa;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+// 001 ========
+.main-btn {
+    padding: 0.5rem 1rem;
+    color: $yellow-color;
+    background-color: $red-color;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+        color: $yellow-color !important;
+        background-color: $red-color !important;
+        border-color: $red-color !important;
+    }
+}
+
+// 001 ========
+.main-title {
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 2px;
+        background-color: $green-color;
+    }
+}
+
+// 001
+.navbar {
+    background-color: $dark-color;
+
+    // 002
+    .container {
+
+        // 003
+        .navbar-toggler {
+            font-size: 25px;
+            color: #fff;
+            border-color: #fff;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &[aria-expanded="true"] {
+                border-color: $green-color;
+            }
+        }
+
+        // 003
+        .navbar-collapse {
+
+            // 004
+            .navbar-nav {
+
+                // 005
+                .nav-item {
+
+                    // 006
+                    .nav-link {
+                        color: #fff;
+
+                        &.active {
+                            color: $green-color;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $green-color;
+                        }
+                    }
+                }
+            }
+
+            // 004
+            .search {
+                border-left: 1px solid $green-color;
+
+                // 005
+                svg {
+                    color: $green-color;
+                }
+            }
+        }
+    }
+}
+
+// 001
+.landing {
+    background-color: $dark-color;
+    min-height: calc(100vh - 72px);
+}
+
+// 001
+.features {
+
+    // 002
+    .container {
+
+        // 003
+        .row {
+
+            // 004
+            div {
+
+                // 005
+                .feat {
+
+                    // 006
+                    .icon_holder {
+                        height: 200px;
+
+                        // 007
+                        svg {
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+
+                        // 007
+                        .number {
+                            font-size: 12rem;
+                            color: $section-color;
+                        }
+
+                        // 007
+                        .icon {
+                            color: $green-color;
+                        }
+                    }
+
+                    // 006
+                    h4 {
+                        color: $yellow-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 001
+.our-work {
+    background-color: $section-color;
+
+    // 002
+    .container {
+
+        // 003
+        ul {
+
+            // 004
+            li {
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+
+                &:not(.active):hover {
+                    color: $red-color;
+                }
+
+                &.active {
+                    background-color: $red-color;
+                    color: $yellow-color;
+                }
+            }
+        }
+
+        // 003
+        .row {
+
+            // 004
+            div {
+
+                // 005
+                .box {
+                    padding: 5px;
+                    overflow: hidden;
+                    position: relative;
+
+                    &::before {
+                        content: attr(data-work);
+                        position: absolute;
+                        width: calc(100% - 10px);
+                        height: calc(100% - 10px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        transition: 0.3s;
+                        color: #FFF;
+                        background-color: #33d1ccc2;
+                        transform: translateX(calc(-100% - 5px));
+                    }
+
+                    &:hover::before {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 001
+.stuff {
+
+    // 002
+    .container {
+
+        // 003
+        .description {
+            max-width: 500px;
+        }
+    }
+}
+
+// 001
+.team {
+    background-color: $section-color;
+
+    // 002
+    .container {
+
+        // 003
+        h2 {
+            color: $yellow-color;
+        }
+
+        // 003
+        .row {
+
+            // 004
+            div {
+
+                // 005
+                .box {
+
+                    img {
+                        width: 100%;
+                    }
+
+                    // 006
+                    h4 {
+                        background-color: $green-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 001
+.project {
+    background-color: $dark-color;
+}
+
+// 001
+.subscribe {
+    background-color: $yellow-color;
+
+    // 002
+    .container {
+
+        // 003
+        .row {
+
+            // 004
+            div {
+
+                // 005
+                input[type="text"] {
+                    border: none;
+                    border-bottom: 1px solid #fff;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+
+                // 005
+                input[type="submit"] {
+                    background-color: $dark-color;
+                    color: $yellow-color;
+                }
+            }
+        }
+    }
+}
+
+// 001
+.footer {
+    background-color: $dark-color;
+
+    // 002
+    .container {
+
+        // 003
+        .row {
+
+            // 004
+            div {
+
+                // 005
+                .info {
+
+                    // 006
+                    .copyright {
+
+                        // 007
+                        >span {
+                            color: $green-color;
+                        }
+
+                        // 007
+                        div {
+
+                            // 002
+                            span {
+                                color: $yellow-color;
+                            }
+                        }
+                    }
+                }
+
+                // 005
+                .contact {
+
+                    // 006
+                    ul {
+
+                        // 007
+                        li {
+
+                            // 002
+                            a {
+
+                                // 003
+                                svg {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+
+                                // 003
+                                .facebook {
+                                    background-color: #1877f2;
+                                }
+
+                                // 003
+                                .twitter {
+                                    background-color: #1da1f2;
+                                }
+
+                                // 003
+                                .linkedin {
+                                    background-color: #0077b5;
+                                }
+
+                                // 003
+                                .youtube {
+                                    background-color: #ff0000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

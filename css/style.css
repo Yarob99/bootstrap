@@ -1,0 +1,185 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  padding: 0.5rem 1rem;
+  color: #ffc400;
+  background-color: #ff3150;
+}
+.main-btn:hover, .main-btn:focus {
+  box-shadow: none;
+  color: #ffc400 !important;
+  background-color: #ff3150 !important;
+  border-color: #ff3150 !important;
+}
+
+.main-title::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: #33d1cc;
+}
+
+.navbar {
+  background-color: #19283f;
+}
+.navbar .container .navbar-toggler {
+  font-size: 25px;
+  color: #fff;
+  border-color: #fff;
+}
+.navbar .container .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .container .navbar-toggler[aria-expanded=true] {
+  border-color: #33d1cc;
+}
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+  color: #33d1cc;
+}
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+  color: #33d1cc;
+}
+.navbar .container .navbar-collapse .search {
+  border-left: 1px solid #33d1cc;
+}
+.navbar .container .navbar-collapse .search svg {
+  color: #33d1cc;
+}
+
+.landing {
+  background-color: #19283f;
+  min-height: calc(100vh - 72px);
+}
+
+.features .container .row div .feat .icon_holder {
+  height: 200px;
+}
+.features .container .row div .feat .icon_holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .container .row div .feat .icon_holder .number {
+  font-size: 12rem;
+  color: #eff7fa;
+}
+.features .container .row div .feat .icon_holder .icon {
+  color: #33d1cc;
+}
+.features .container .row div .feat h4 {
+  color: #ffc400;
+}
+
+.our-work {
+  background-color: #eff7fa;
+}
+.our-work .container ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work .container ul li:not(.active):hover {
+  color: #ff3150;
+}
+.our-work .container ul li.active {
+  background-color: #ff3150;
+  color: #ffc400;
+}
+.our-work .container .row div .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .container .row div .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+  color: #FFF;
+  background-color: rgba(51, 209, 204, 0.7607843137);
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .container .row div .box:hover::before {
+  transform: translateX(0);
+}
+
+.stuff .container .description {
+  max-width: 500px;
+}
+
+.team {
+  background-color: #eff7fa;
+}
+.team .container h2 {
+  color: #ffc400;
+}
+.team .container .row div .box img {
+  width: 100%;
+}
+.team .container .row div .box h4 {
+  background-color: #33d1cc;
+}
+
+.project {
+  background-color: #19283f;
+}
+
+.subscribe {
+  background-color: #ffc400;
+}
+.subscribe .container .row div input[type=text] {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.subscribe .container .row div input[type=text]:focus {
+  outline: none;
+}
+.subscribe .container .row div input[type=text]::placeholder {
+  color: #fff;
+}
+.subscribe .container .row div input[type=submit] {
+  background-color: #19283f;
+  color: #ffc400;
+}
+
+.footer {
+  background-color: #19283f;
+}
+.footer .container .row div .info .copyright > span {
+  color: #33d1cc;
+}
+.footer .container .row div .info .copyright div span {
+  color: #ffc400;
+}
+.footer .container .row div .contact ul li a svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .container .row div .contact ul li a .facebook {
+  background-color: #1877f2;
+}
+.footer .container .row div .contact ul li a .twitter {
+  background-color: #1da1f2;
+}
+.footer .container .row div .contact ul li a .linkedin {
+  background-color: #0077b5;
+}
+.footer .container .row div .contact ul li a .youtube {
+  background-color: #ff0000;
+}
+
+/*# sourceMappingURL=style.css.map */
